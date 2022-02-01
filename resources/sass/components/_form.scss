@@ -1,0 +1,46 @@
+form {
+  .half-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  input, select, textarea {
+    background: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    color: $text-color;
+
+    &::placeholder {
+      font-weight: lighter;
+    }
+
+    &:focus {
+      border-color: $border-color-dark;
+    }
+  }
+
+  .input-note {
+    color: $input-note-color;
+    font-weight: normal;
+    font-size: .95rem;
+  }
+
+  button[type="submit"] {
+    border-style: none;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+
+  label {
+    display: block;
+  }
+}

@@ -1,0 +1,47 @@
+.auth-pages {
+    &.login, &.register {
+        width: 40%;
+        margin: auto;
+    }
+
+    &.login {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    &.register {
+        padding: 50px 0;
+    }
+
+    &.login-checkout {
+        margin: 100px auto;
+        display: grid;
+        grid-gap: 100px;
+        min-height: 60vh;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    input {
+        margin-bottom: 20px;
+    }
+
+    input[type="checkbox"] {
+        width: auto;
+    }
+
+    .login-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .auth-right {
+        border-left: 1px solid $separator-color;
+        padding-left: 100px;
+    }
+
+    .already-have-container {
+        text-align: right;
+    }
+
+}

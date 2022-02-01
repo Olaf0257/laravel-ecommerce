@@ -1,0 +1,114 @@
+.cards-container {
+    padding: 0 150px;
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 60px $gutter;
+    }
+}
+
+.product-card {
+    position: relative;
+    border: 1px solid $border-color;
+    padding: 12px 0;
+    height: 330px;
+    -webkit-box-shadow: 0px 0px 7px -2px #33333324;
+    -moz-box-shadow: 0px 0px 7px -2px #33333324;
+    -o-box-shadow: 0px 0px 7px -2px #33333324;
+    box-shadow: 0px 0px 7px -2px #33333324;
+    border-radius: 5px;
+    background: #fff;
+
+    &:hover {
+        -webkit-box-shadow: 0px 0px 16px -1px #33333324;
+        -moz-box-shadow: 0px 0px 16px -1px #33333324;
+        -o-box-shadow: 0px 0px 16px -1px #33333324;
+        box-shadow: 0px 0px 16px -1px #33333324;
+    }
+
+    .product-badges {
+        position: absolute;
+
+        .product-badge-new {
+            position: relative;
+            left: 6px;
+            background: $red;
+        }
+    }
+
+    .product-image {
+        height: 62%;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #eeeeee96;
+        text-align: center;
+
+        &:hover img {
+            max-width: 90% !important;
+            max-height: 96% !important;
+        }
+        
+        a {       
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+
+            img {
+                max-width: 75%;
+                max-height: 85%;
+            }
+        }
+    }
+
+    .product-details {
+        height: 38%;
+        padding: 0 7px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .product-details-top {
+            margin: 10px;
+            
+            .product-name {
+                margin-bottom: 3px;
+                font-weight: bold;
+                font-size: 1.05rem;
+                line-height: 1.2;
+
+                &:hover {
+                    color: $text-color-light;
+                }
+            }
+
+            .product-price {
+                font-weight: bold;
+                font-size: 1.1rem;
+                color: $blue;
+            }
+        }
+
+        .product-actions {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .add-to-cart-btn {
+                font-size: 0.95rem;
+                padding: 5px 26px;
+
+                i {
+                    font-size: 1.1rem;
+                }
+            }
+
+            .heart-item-form button i {
+                font-size: 1.8rem !important;
+            }
+        }
+    }
+}

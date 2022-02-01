@@ -1,0 +1,32 @@
+.search-form {
+    position: relative;
+
+    input {
+        width: 400px;
+        background: #fff;
+        border: 1px solid #d6d6d6;
+        color: #535353;
+        padding: 12px 40px;
+        border-radius: 50px;
+        box-shadow: 0px 0px 25px -12px #cecece;
+
+        &:focus {
+            box-shadow: 0px 0px 25px -1px #cecece;
+        }
+    }
+
+    button {
+        position: absolute;
+        right: 2px;
+        padding: 18px;
+        top: -12px;
+        font-size: 1.5rem !important;
+        background: transparent;
+        color: #b0b0b0;
+        transform: rotateY(180deg);
+ 
+        &:hover {
+            color: darken(#b0b0b0, 20%);
+        }
+    }
+}

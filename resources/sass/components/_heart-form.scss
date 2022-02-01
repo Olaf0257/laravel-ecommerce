@@ -1,0 +1,37 @@
+.heart-item-form button {
+    display: flex;
+    align-items: center;
+    color: $blank-heart;
+    position: relative;
+
+    &:hover > span {
+        right: 19px;
+        visibility: visible;
+        color: $red-light;
+    }
+
+    &:hover > i {
+        color: $red-light;
+    }
+
+    span {
+        position: absolute;
+        right: 0px;
+        visibility: hidden;
+        transition: right .4s ease, visibility .1s ease;
+        color: $blank-heart;
+        font-size: 1rem;
+
+        &.add-to-wishlist {
+            width: 120px;
+        }
+
+        &.remove-from-wishlist {
+            width: 160px;
+        }
+    }
+
+    i {
+        font-size: 1.9rem !important;
+    }
+}

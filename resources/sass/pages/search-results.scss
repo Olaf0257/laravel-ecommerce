@@ -1,0 +1,43 @@
+.search-section {
+	margin-top: 45px !important;
+	margin-bottom: 45px !important;
+	width: 70%;
+	margin: auto;
+
+	.search-products {
+		margin-top: 30px;
+
+		.search-product {
+			display: grid;
+			grid-template-columns: 1fr 5fr;
+			align-items: center;
+			grid-gap: 30px;
+			padding: 20px 0;
+			color: #555;
+
+			.product-name {
+				font-size: 1.4rem;
+
+				a {
+					color: #555;
+				}
+			}
+
+			.product-description {
+				font-size: .9rem;
+			}
+
+			.product-price {
+				font-weight: bold;
+			}
+
+			.product-info * {
+				margin: 5px 0;
+			}
+		}
+
+		.search-product:not(:last-of-type) {
+			border-bottom: 1px solid #dadada;
+		}
+	}
+}

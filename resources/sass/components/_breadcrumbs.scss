@@ -1,0 +1,37 @@
+.breadcrumbs {
+    background: #fdfdfd;
+    border-bottom: 1px solid $separator-color;
+    padding: 14px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+
+        a {
+            font-size: 1.09rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .visited {
+            font-size: 1.15rem;
+            font-weight: normal;
+            color: #818181;
+        }
+
+        .breadcrumb-separator {
+            font-size: 10px;
+            color: lighten($text-color, 30%);
+        }
+
+        .breadcrumbs-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

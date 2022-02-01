@@ -1,0 +1,123 @@
+.button {
+    padding: 11px 28px;
+    border-radius: 50px;
+
+    &:hover {
+        color: $white;
+        background: $text-color;
+    }
+}
+
+.button-icon {
+    font-weight: normal;
+    background: transparent;
+    font-size: 14px !important;
+    padding: 0;
+
+    &:hover {
+        font-weight: 300;
+    }
+}
+
+.button-icon-red {
+    font-weight: normal;
+    background: transparent;
+    font-size: 14px !important;
+    padding: 0;
+    
+    &:hover {
+        color: $red-light;
+    }
+}
+
+.button-plain {
+    border: 1px solid $border-color-dark !important;
+    background: transparent;
+    border-radius: 100px;
+    color: $text-color;
+}
+
+.button-container {
+    margin: 80px 0;
+}
+
+.button-red {
+    background: $red;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: 14px !important;
+    line-height: normal !important;
+
+    &:hover {
+        background: $red-dark;
+    }
+}
+
+.button-black {
+      background: #535353cc;
+      color: #fff;
+
+      &:hover {
+        background: $text-color-dark;
+      }
+}
+
+a.button-black {
+    &:visited {
+        color: #fff;
+    }
+}
+
+.button-trans {
+    background: transparent;
+    border-radius: 14px !important;
+    color: $separator-color;
+    font-size: 1.2rem;
+    border: 1px solid $separator-color;
+
+    &:hover {
+        background: $text-color-dark;
+        border: 1px solid $text-color-dark;
+        color: $white;
+    }
+
+    &:visited {
+        color: $white;
+    }
+}
+
+.button-white {
+    color: $text-color;
+    border: 1px solid #53535380;
+
+    &:hover {
+        background: $text-color;
+        color: $white;
+    }
+}
+
+.button-green {
+    background: $green;
+    color: #fff !important;
+
+    &:hover {
+        background: darken($green, 7%) !important;
+    }
+}
+
+.button-blue {
+    background: $blue-light;
+    color: #fff !important;
+
+    &:hover {
+        background: darken($blue, 7%) !important;
+    }
+}
+
+.can-be-disabled {
+    &:disabled {
+        cursor: not-allowed;
+    }
+}

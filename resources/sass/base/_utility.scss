@@ -1,0 +1,38 @@
+.text-center {
+	text-align: center;
+}
+
+.spacer {
+	margin-bottom: 30px;
+}
+
+.sticky-footer {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.breadcrumb-separator {
+    margin: 0 6px;
+}
+
+.solid-heart {
+    color: $red !important;
+
+    &:hover {
+        color: #f78690 !important
+    }
+}
+
+.empty {
+    background: $light-gray-background;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #3B3B3B;
+    text-align: left;
+}

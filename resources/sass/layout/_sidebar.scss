@@ -1,0 +1,76 @@
+.sidebar {
+    .inner-sidebar {
+        border: 1px solid $border-color;
+        border-radius: 10px;
+        padding: 30px 20px;
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            &.categories-list li {
+                font-size: 1.1rem;
+            }
+
+            &.sort-by-price-list li {
+                font-size: .95rem;
+            }
+
+            &.filter-by-price {
+                margin-top: 35px;
+                margin-bottom: 20px;
+
+                .slider-container {
+                    width: 100% !important;
+
+                    * {
+                        font-size: .9rem;
+                        letter-spacing: normal;
+                    }
+
+                    .back-bar {
+                        height: 8px !important;
+
+                        .pointer {
+                            top: -3px !important;
+                        }
+                    }
+                }
+            }
+
+            &:not(.filter-by-price) {
+                margin-left: 15px;
+            }
+
+            &:not(:last-of-type) {
+                margin-bottom: 30px;
+            }
+        }
+
+        li {
+            position: relative;
+            display: flex;
+            align-items: center;
+            line-height: 2.2;
+            font-weight: lighter;
+            font-size: 1.1rem;
+                
+            &.active {
+                font-weight: bold;
+                
+                &::after {
+                    position: absolute;
+                    content: '';
+                    height: 7px;
+                    width: 7px;
+                    background: $red;
+                    border-radius: 50%;
+                    left: 97px;
+                }
+            }
+        }
+    }
+}

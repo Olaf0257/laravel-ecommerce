@@ -1,0 +1,20 @@
+.home-products-section {
+    padding: 50px 0;
+
+    .products-container {
+		margin-top: 70px;
+
+		h2 {
+			font-size: 1.5rem !important;
+			margin-bottom: 35px;
+		}
+
+		.cards-container {
+		    padding: 0 110px;
+
+		    &:first-of-type {
+		        margin-bottom: 80px;
+		    }
+		}
+    }
+}

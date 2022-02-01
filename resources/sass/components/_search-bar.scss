@@ -1,0 +1,37 @@
+.docs-searchbar-suggestion--category-header {
+	display: none !important;
+}
+
+.docs-searchbar-suggestion--wrapper {
+	display: flex;
+	align-items: center;
+	padding: 8px 10px !important;
+
+	.docs-searchbar-suggestion--subcategory-column {
+		display: none !important;
+	}
+
+	.docs-searchbar-suggestion--content {
+		width: 100% !important;
+
+		&:before {
+			width: 0 !important;
+		}
+
+		.docs-searchbar-suggestion--title {	
+			font-weight: normal !important;
+
+			h3 {
+				font-size: 1.2rem;
+			}
+
+			.aa-suggestion-title-separator {
+				display: none;
+			}
+		}
+	}
+}
+
+.docs-searchbar-footer {
+	display: none;
+}

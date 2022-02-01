@@ -1,0 +1,64 @@
+html {
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+body {
+    height: 100%;
+    color: $text-color;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    -webkit-transition: all 0.3s ease; 
+    -moz-transition: all 0.3s ease; 
+    -o-transition: all 0.3s ease; 
+    transition: all 0.3s ease; 
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+
+    &:visited {
+        color: $text-color;
+    }
+
+    &:hover {
+        color: lighten($text-color, 40%);
+    }
+
+}
+
+.logo a {
+    color: $white;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.4rem !important;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+strong {
+    font-weight: bold;
+}
+
+button {
+    letter-spacing: 1px;
+}

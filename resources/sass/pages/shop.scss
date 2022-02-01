@@ -1,0 +1,12 @@
+.products-section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin: 40px auto 80px;
+    gap: 0 45px;
+        
+    .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 50px 24px;
+    }
+}

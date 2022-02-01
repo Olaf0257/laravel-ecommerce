@@ -1,0 +1,52 @@
+footer {
+    background: $gray-background;
+    color: $white;
+    padding: 40px 0;
+  }
+
+  .footer-content {
+  	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+    ul {
+	  	display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		li {
+			margin: 0 20px;
+
+			i {
+				color: $white;
+				border: 1px solid #8e8c8c;
+				border-radius: 5px;
+				width: 35px;
+				height: 35px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				&.fa-globe:hover {
+					background: #004493;
+					border-color: #004493;
+				}
+
+				&.fa-facebook-f:hover {
+					background: #385a98;
+					border-color: #385a98;
+				}
+
+				&.fa-twitter:hover {
+					background: #59a7e6;
+					border-color: #59a7e6;
+				}
+
+				&.fa-instagram:hover {
+					background: #b53f80;
+					border-color: #b53f80;
+				}
+			}
+		}
+    }
+  }

@@ -1,0 +1,109 @@
+.contact-container {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url('/images/contact-background.jpg');
+	display: none;
+
+	.contact-overlay {
+		display: flex;
+		height: 100%;
+		width: 100%;
+		background: rgba(0,0,0,.4);
+		color: $white;
+
+		.fa-times {
+			position: absolute;
+			right: 35px;
+			top: 35px;
+			color: $white;
+			font-size: 2.5rem;
+			cursor: pointer;
+
+			&:hover {
+				font-size: 2.2rem;
+			}
+
+			&:active .contact-container {
+				display: none;
+			}
+		}
+
+		.contact-content {
+			width: 60%;
+			margin: auto;
+
+			div {
+				width: 60%;
+				margin: auto;
+				text-align: center;
+
+				h2 {
+					font-size: 2.6rem !important;
+					letter-spacing: 4px !important;
+				}
+
+				h4 {
+					font-size: 1.4rem;
+					margin-bottom: 30px;
+				}
+
+				form {				
+					input, textarea {
+						background: rgba(0,0,0,.5);
+						color: $white;
+						border: 1px solid #555;
+						margin-bottom: 20px;
+						padding: 15px 20px;
+
+						&::placeholder {
+							font-weight: normal;
+						}
+
+						&:focus {
+							border-color: #999;
+						}
+					}
+
+					textarea {
+						height: 115px;
+					}
+
+					button {
+						display: block;
+						margin: auto;
+						background: rgba(15, 15, 15, 0.8);
+
+						&:hover {
+							background: rgba(15, 15, 15);
+						}
+					}
+				}
+
+				.social-links ul {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-top: 30px;
+
+					li a {
+						color: $white;
+						font-size: 1.8rem;
+						margin: 20px;
+
+						&:hover {
+							color: #fff;
+						}
+					}
+
+					span {
+						display: block;
+						width: max-content;
+					}
+				}
+			}
+		}
+	}
+}

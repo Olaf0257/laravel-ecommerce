@@ -1,0 +1,31 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+}
+
+h1, h2, .product-section-subtitle, .product-section-price {
+    font-weight: 700;
+}
+
+h1 {
+    line-height: 1.2;
+}
+
+h1.stylish-heading {
+    margin-bottom: 60px;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      left: 1px;
+      width: 76px;
+      height: 2px;
+      background: $text-color;
+      content: "";
+      display: block;
+      bottom: -11px;
+      top: auto;
+  }
+}

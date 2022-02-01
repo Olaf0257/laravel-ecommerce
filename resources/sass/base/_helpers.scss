@@ -1,0 +1,39 @@
+.clearfix::after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+.container {
+	margin: auto 85px;
+	max-width: 1200px;
+}
+
+.small-text {
+	font-size: .8;
+}
+
+.hr {
+	border-bottom: 1px solid $border-color;
+	margin: 5px 0;
+}
+
+.is-invalid {
+	border-color: lighten($red, 30%) !important;
+}
+
+.invalid-feedback {
+	color: $red;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.toggle-down {
+	max-height: 1000px !important;
+}

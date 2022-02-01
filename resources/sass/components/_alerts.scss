@@ -1,0 +1,77 @@
+.alert-success {
+    color: #155724;
+    background-color: #d4edda !important;
+    border-color: #c3e6cb;
+    padding: 9px 30px;
+    font-size: 1rem;
+    border: 1px solid #a7ceb0;
+}
+
+.validation-error-msg {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: .25rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.validation-warning-msg {
+    border: 1px solid #ffeeba;
+    color: #856404;
+    background-color: #fff3cd;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: .25rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.success-session-msg,
+.error-session-msg {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 109px;
+    right: -1000px;
+    max-width: 400px;
+    padding: 15px 45px;
+    background: #f9f9f9;
+    color: #353b48;
+    font-weight: normal;
+    animation: display-msg 7s linear;
+    z-index: 100;
+    border: 1px solid $border-color;
+
+    &.success-session-msg {
+        border-top: 8px solid #4cd137;
+    }
+
+    &.error-session-msg {
+        border-top: 10px solid $red;
+    }
+
+    .fa-check-circle {
+        position: relative;
+        left: -28px;
+        font-size: 2rem;
+        color: #4cd137a1;
+    }
+}
+
+@keyframes display-msg {
+    5% {
+        right: 0;
+    }
+    90% {
+        right: 0;
+    }
+    95% {
+        right: 20px;
+    }
+    100% {
+        right: -1000px;
+    }
+}

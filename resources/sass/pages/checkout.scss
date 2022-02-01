@@ -1,0 +1,174 @@
+h1.checkout-heading {
+  margin-top: 40px;
+}
+
+.checkout-section {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  grid-gap: 10%;
+  margin: 40px auto 80px;
+
+  .checkout-section-left {
+    background: $light-gray-background;
+    padding: 30px 40px;
+    border-radius: 28px;
+
+    .address-checkbox-container {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 25px;
+    }
+
+    .shipping-details-container {
+      max-height: 1000px;
+      overflow: hidden;
+      transition: max-height .3s ease-in-out;
+    }
+
+    form button[type='submit'] {
+      width: 50%;
+      display: block;
+      margin: auto;
+      font-weight: normal;
+      font-size: 1.3rem !important;
+      padding: 10px;
+
+      &.checkout-with-credit-card-button {
+        width: 100% !important;
+      }
+    }
+
+    .separator {
+      display: grid;
+      grid-template-columns: 3fr 1fr 3fr;
+      text-align: center;
+      margin: 30px 0;
+      align-items: center;
+
+      .or {
+        font-weight: normal;
+        font-size: 1.4rem;
+        color: #737373;
+      }
+
+      .line {
+        height: 1px;
+        background: #b0b0b0;
+      }
+    }
+  }
+
+  .checkout-section-right {
+    padding: 30px 40px;
+    border: 1px solid $border-color;
+    border-radius: 28px;
+    height: max-content;
+
+    .checkout-table-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $border-color;
+      padding: 14px 0;
+
+      .checkout-table-row-left, .checkout-table-row-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .checkout-table-row-left {
+        width: 82%;
+      }
+
+      .checkout-table-img {
+        width: 32%;
+      }
+
+      .checkout-item-details {
+        width: 59%;
+
+        .checkout-table-item {
+          font-size: 1.1rem;
+          margin-bottom: 5px;
+        }
+      }
+
+      .checkout-table-description {
+        color: $text-color-light;
+      }
+
+      .checkout-table-price {
+        margin: 6px;
+        font-weight: bold;
+      }
+
+      .checkout-table-quantity {
+        border: 1px solid $border-color;
+        color: $text-color-light;
+        padding: 4px 12px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .checkout-totals {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    line-height: 2;
+
+    .checkout-totals-right {
+      text-align: right;
+      width: 40%;
+      letter-spacing: 1px;
+    }
+
+    .checkout-totals-left {
+      .remove-coupon-form {
+        display: inline-block;
+        margin-left: 20px;
+
+        button {
+          color: $red;
+          font-size: .85rem !important;
+        }
+      }
+    }
+
+    .checkout-totals-total {
+      font-weight: bold;
+      font-size: 1.3rem;
+      line-height: 2.2;
+    }
+  }
+}
+
+
+
+/**
+* The CSS shown here will not be introduced in the Quickstart guide, but shows
+* how you can use CSS to style your Element's container.
+*/
+.StripeElement {
+  background-color: white;
+  padding: 16px 16px;
+  border: 1px solid #ccc;
+
+}
+
+.StripeElement--focus {
+  // box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+#card-errors {
+  color: #fa755a;
+}

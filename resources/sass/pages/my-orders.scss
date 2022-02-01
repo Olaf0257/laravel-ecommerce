@@ -1,0 +1,33 @@
+.orders-table {
+	width: 90%;
+	margin-bottom: 20px;
+
+	thead {
+		background: #f0f0f099;
+		border: 1px solid #ebebeb;
+
+		.head-tr {
+			display: flex;
+
+			th {
+				padding: 10px 20px;
+			}
+
+			.first-th {
+				display: flex;
+				gap: 4rem;
+			}
+
+			.last-th {
+				display: flex;
+				margin-left: auto;
+				align-items: center;
+				gap: 2rem;
+			}
+		}
+	}
+
+	tbody {
+		border-top: 0;
+	}
+}
